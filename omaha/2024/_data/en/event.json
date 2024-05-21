@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "url": "https://barcampomaha.org",
+    "author": "BarCamp Omaha",
+    "description": "BarCamp is a community conference where the speakers are everyday folks, talking about what makes them excited."
+  },
+  "intro": {
+    "title": "BarCamp is a COMMUNITY CONFERENCE",
+    "content": [
+      "BarCamp Omaha is a user generated conference where the speakers are everyday folks talking about what interests them. Talks aren’t scheduled or planned until just before the conference starts, and anyone can give a talk. Curious, but don’t want to take the stage? That’s okay too.",
+
+      "At BarCamp, you won’t find a predetermined speaker list or a line of suits passing out business cards. What you will find is some shaggy dude in a t-shirt talking about moonshine, a web developer talking about the best practices in SEO, or a world traveler sharing their experiences. BarCamp is a chance to network, learn something new, and share what awakens your curiosity. Come one, come all."
+    ],
+    "button": "Get Your Ticket Now!"
+  },
+  "venue": {
+    "title": "The Venue",
+    "host": "Aviture",
+    "description": "<a href=\"https:\/\/www.aviture.us.com\/\" target=\"_blank\">Aviture</a> is a full-service technology and software consulting firm specializing in custom solutions and applications that innovate. They are graciously allowing us to use their space this year for BarCamp main events!"
+  },
+  "tracks": {
+    "title": "The Tracks",
+    "description": "Talks are organized into one of four speaking categories.",
+    "tracks": [
+      {
+        "name": "Maker",
+        "description": "Tell us about the awesome things you’ve created or built, or your journey to owning your own work (even if it’s a side hustle) and living the dream."
+      },
+      {
+        "name": "Design",
+        "description": "When you’re in your zone, when your art seems to create itself, when you amaze yourself with what you’ve done &mdash; what gets you there? Tell us what you do when you’re at your most creative."
+      },
+      {
+        "name": "Technology",
+        "description": "Are you agile, traditional, waterfall or adaptive? Are you researching, designing, programming or testing? Or you about to blow our minds with something so new, we have to see it to believe it?"
+      },
+      {
+        "name": "Kitchen Sink",
+        "description": "Maybe you’re a plumber. Maybe you’re a chef. Maybe you have very strong opinions on whether or not a hot dog is a sandwich. We want to hear your kitchen sink story (literal or not) and the how behind your gushing achievements."
+      }
+    ]
+  },
+  "agenda": {
+    "title": "The Agenda",
+    "description": "Here’s what to expect!",
+    "days": [
+      {
+        "date": "Friday, August&nbsp;9th",
+        "events": [
+          {
+            "time": "7:00PM",
+            "title": "Opening Party at TBD!",
+            "description": "Show up, relax, mingle with other BarCampers and have a drink on our opening party sponsor!"
+          },
+          {
+            "time": "12:00AM",
+            "title": "Go Home!",
+            "description": "Drive safely, take a cab or call in a Lyft. Just show up tomorrow in one piece. :)"
+          }
+        ]
+      },
+      {
+        "date": "Saturday, August&nbsp;10th",
+        "events": [
+          {
+            "time": "8:00AM",
+            "title": "Breakfast / Sign Up For Talks at Aviture!",
+            "description": "Grab some breakfast and coffee, sign up for a talk, and start the day getting to know your fellow BarCampers."
+          },
+          {
+            "time": "9:00AM",
+            "title": "Morning Talks Begin",
+            "description": "We’ll start out the first round of talks promptly at 9am, so make sure you’re all settled in and ready to learn!"
+          },
+          {
+            "time": "12:00PM",
+            "title": "Lunch & Networking",
+            "description": "Hang out with your new BarCamp friends and enjoy a delicious lunch provided by a local restaurant."
+          },
+          {
+            "time": "1:00PM",
+            "title": "Afternoon Talks Begin",
+            "description": "At 1pm, we’ll reconvene for our afternoon session of talks!"
+          },
+          {
+            "time": "3:00PM",
+            "title": "Closing",
+            "description": "Say your goodbyes, collect addresses for your new pen pals, and start looking forward to next year."
+          }
+        ]
+      }
+    ]
+  },
+  "faqs": {
+    "title": "The FAQ’s",
+    "description": "Get your quick answers here!",
+    "faqs": [
+      {
+        "question": "What am I paying $20 for?",
+        "answer": "Opening party / drink ticket, breakfast, coffee, soda & snacks, lunch, BarCamp t-shirt, good times / new friends (which is sorta priceless…)"
+      },
+      {
+        "question": "How long are the talks?",
+        "answer": "Each talk runs for 23 minutes. Speakers are allowed to use that time however they wish&mdash;you can even share a time slot with multiple people or set up a panel discussion, allowing time for Q&A at the end. The last 7 minutes of every half-hour slot is reserved for transition time between talks."
+      },
+      {
+        "question": "Can I give a sales presentation?",
+        "answer": "Nope! To be respectful of our BarCamp community, sales presentations or pitches are not allowed. Don’t even try it, folks."
+      },
+      {
+        "question": "When do I get my BarCamp t-shirt?",
+        "answer": "Tees and other goodies will be available on the day of BarCamp at the merch table. Though we try to purchase enough of each t-shirt size, we recommend picking your shirt up early in the morning just in case."
+      },
+      {
+        "question": "What should I bring?",
+        "answer": "Something to share with all of your new friends…a business card perhaps? We encourage you to bring a notebook for notes. If you’ve planned a talk with presentation slides, bring your laptop or an external drive with your files. And bring all your friends!"
+      },
+      {
+        "question": "What if I have a food allergy?",
+        "answer": "No sweat! We make sure everyone is included. If you have specific food allergies or restrictions, contact Kit at <a href=\"mailto:barcampevents@gmail.com\">barcampevents@gmail.com</a> and we&rsquo;ll take care of you. Each year we work with our caterer to provide vegetarian, vegan and gluten free options."
+      },
+      {
+        "question": "Do I need to be vaccinated for COVID-19?",
+        "answer": "WP Engine's policy to enter their space is that you must be vaccinated for covid or have a negative test result from within 48 hours prior to the event. If the vaccine requirement is problematic for you (e.g. you are unable to get vaccinated for health reasons), please don't hesitate to reach out to Kit at <a href=\"mailto:barcampevents@gmail.com\">barcampevents@gmail.com</a>."
+      }
+    ]
+  },
+  "sponsors": {
+    "title": "The Sponsors",
+    "description": "A huge thanks to all our amazing BarCamp sponsors!",
+    "representative_format": "Say thank you to {0} if you see them!",
+    "fallback_copy": "We don’t have any {tier_level} sponsors. Can you help?",
+    "tiers": [
+      {
+        "title": "Platinum",
+        "link": "#"
+      },
+      {
+        "title": "Gold",
+        "link": "#"
+      },
+      {
+        "title": "Silver",
+        "link": "#"
+      },
+      {
+        "title": "Bronze",
+        "link": "#"
+      },
+      {
+        "title": "Recurring",
+        "link": "#"
+      }
+    ]
+  },
+  "footer": {
+    "title": "Thanks!",
+    "description": "Thanks for visiting!",
+    "counter": "You are person # {number} to visit our website!",
+    "webring_title": "This site is part of the BarCamp Omaha webring",
+    "previous": "<< Prev",
+    "next": "Next >>",
+    "webring_all_sites": "All Sites:"
+  }
+}
