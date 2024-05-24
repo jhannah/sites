@@ -832,6 +832,10 @@ video {
   line-height: 1.5rem;
 }
 
+.text-\[clamp\(2rem\2c _10vw\2c _4rem\)\]{
+  font-size: clamp(2rem, 10vw, 4rem);
+}
+
 .text-\[\#ffdb91\]{
   --tw-text-opacity: 1;
   color: rgb(255 219 145 / var(--tw-text-opacity));
