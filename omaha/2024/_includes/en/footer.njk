@@ -1,23 +1,22 @@
-<footer class="section section--padded text-align-center">
-  <h2 class="h1 three-d-text dancy-text mb-0 tight-line-height">{{ en.event.footer.title }}</h2>
-  <p class="h3 mt-0 mb-4 tight-line-height"><em>{{ en.event.footer.description }}</em></p>
-  <p>{{ en.event.footer.counter | replace('{number}', '<b class="counter js-fake-counter">1000</b>') | safe }}</p>
+<footer class="bg-light-paper p-12">
 
-  <nav class="webring max-width max-width--medium mt-4">
-    <h3 class="h4 webring__headline">{{ en.event.footer.webring_title }}</h3>
-    <a class="webring__nav-link webring__nav-link--prev" href="https://2019.barcampomaha.org" target="_blank">
-      {{ en.event.footer.previous }}
-    </a>
-    <a class="webring__nav-link webring__nav-link--next" href="https://2014.barcampomaha.org/" target="_blank">
-      {{ en.event.footer.next }}
-    </a>
-    <h4 class="webring__list-headline">{{ en.event.footer.webring_all_sites }}</h4>
-    <ol class="webring__list">
-      <li class="webring__list-item"><a href="https://2014.barcampomaha.org" target="_blank">2014</a></li>
-      <li class="webring__list-item"><a href="https://2015.barcampomaha.org" target="_blank">2015</a></li>
-      <li class="webring__list-item"><a href="https://2016.barcampomaha.org" target="_blank">2016</a></li>
-      <li class="webring__list-item"><a href="https://2019.barcampomaha.org" target="_blank">2019</a></li>
-      <li class="webring__list-item">2022</li>
-    </ol>
-  </nav>
+  <div class="max-w-[700px] m-auto">
+    <h2 class="text-[clamp(1rem,_10vw,_5rem)] text-center">{{ en.event.footer.title }}</h2>
+    <h3 class="text-[2.75rem] text-center mt-4">{{ en.event.footer.webring_title | safe }}</h3>
+    <p class="text-2xl text-center mt-4"><em>{{ en.event.footer.description }}</em></p>
+
+    <nav class="mt-8">
+      <h6 class="text-center mt-12">{{ en.event.footer.webring_all_sites }}</h6>
+      <ol class="flex justify-center items-center text-center">
+        <li class="p-2"><a href="https://2014.barcampomaha.org" target="_blank">2014</a></li>
+        <li class="p-2"><a href="https://2015.barcampomaha.org" target="_blank">2015</a></li>
+        <li class="p-2"><a href="https://2016.barcampomaha.org" target="_blank">2016</a></li>
+        <li class="p-2"><a href="https://2017.barcampomaha.org" target="_blank">2017</a></li>
+        <li class="p-2"><a href="https://2018.barcampomaha.org" target="_blank">2018</a></li>
+        <li class="p-2"><a href="https://2019.barcampomaha.org" target="_blank">2019</a></li>
+        <li class="p-2"><a href="https://2022.barcampomaha.org" target="_blank">2022</a></li>
+        <li class="p-2 underline">2024</li>
+      </ol>
+    </nav>
+  </div>
 </footer>

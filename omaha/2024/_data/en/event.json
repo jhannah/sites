@@ -154,10 +154,11 @@
     ]
   },
   "footer": {
-    "title": "Thanks!",
+    "title": "Share your passion!",
     "description": "Thanks for visiting!",
     "counter": "You are person # {number} to visit our website!",
-    "webring_title": "This site is part of the BarCamp Omaha webring",
+    "webring_title": "designed and coded by<br /><a href='https://splitinfinities.com'>William A. Nova</a>",
+    "webring_team": "The organizing team is ",
     "previous": "<< Prev",
     "next": "Next >>",
     "webring_all_sites": "All Sites:"
