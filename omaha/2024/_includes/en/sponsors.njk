@@ -1,0 +1,27 @@
+{%- from "../macros/sponsor.njk" import sponsor -%}
+
+<section class="bg-dark-paper p-12">
+  <div class="max-w-[700px] m-auto mb-12">
+    <h2 class="text-[clamp(1rem,_10vw,_5rem)] text-white">{{ en.event.sponsors.title }}</h2>
+    <p class="text-2xl mt-4 text-[#ffdb91]">{{ en.event.sponsors.description }}</p>
+  </div>
+
+  <div class="max-w-[1200px] m-auto mb-12">
+    {% for tier in en.event.sponsors.tiers %}
+      {% set slug = tier.title | lower %}
+      <h3 class="text-[clamp(1rem,_5vw,_4rem)] font-dreamboat mt-20 text-[#ffdb91] text-center">
+        {{ tier.title }}
+      </h3>
+
+      {% if en.sponsors[slug] %}
+        <div class="grid gap-12 mt-8 lg:grid-cols-4 grid-cols-2 xs:grid-cols-1 items-top">
+          {% for sponsor_slug, sponsor_object in en.sponsors[slug] %}
+            {% call sponsor(sponsor_slug, sponsor_object, slug) %}{% endcall %}
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="text-2xl mt-4 text-[#ffdb91] text-center">{{ en.event.sponsors.fallback_copy | replace("{tier_level}", tier.title) | safe }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

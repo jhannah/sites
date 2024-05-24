@@ -1,0 +1,11 @@
+{
+ "name": "barcamp-omaha-2024",
+ "version": 1,
+ "alias": ["omaha-2024.barcamp.events", "2024.barcampomaha.org"],
+ "routes": [
+  {
+   "src": "^/(.*)",
+   "dest": "_site/$1"
+  }
+ ]
+}
