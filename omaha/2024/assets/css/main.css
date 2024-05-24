@@ -5,7 +5,7 @@
 @font-face {
   font-family: Genesis;
 
-  src: url("/assets/fonts/genesis.otf") format("opentype");
+  src: url("/assets/fonts/genesis-font.otf") format("opentype");
 
   font-feature-settings: 'kern' 1, 'ss01';
 }
@@ -13,12 +13,12 @@
 @font-face {
   font-family: Dreamboat;
 
-  src: url("/assets/fonts/dreamboat.otf") format("opentype");
+  src: url("/assets/fonts/dreamboat-font.otf") format("opentype");
 
   font-feature-settings: 'kern' 1, 'ss01';
 }
 
-/* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com*/
+/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -49,9 +49,12 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -61,10 +64,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -136,8 +143,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -146,8 +155,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -206,11 +219,17 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
   /* 1 */
   line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
   /* 1 */
   color: inherit;
   /* 1 */
@@ -235,9 +254,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -357,6 +376,14 @@ menu {
 }
 
 /*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -451,6 +478,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -482,6 +512,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -498,6 +532,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -529,6 +566,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .static{
@@ -547,12 +588,12 @@ video {
   position: sticky;
 }
 
-.top-\[-50\%\]{
-  top: -50%;
-}
-
 .top-0{
   top: 0px;
+}
+
+.top-\[-50\%\]{
+  top: -50%;
 }
 
 .z-0{
@@ -563,16 +604,12 @@ video {
   z-index: 10;
 }
 
-.col-span-full{
-  grid-column: 1 / -1;
-}
-
 .col-span-2{
   grid-column: span 2 / span 2;
 }
 
-.m-auto{
-  margin: auto;
+.col-span-full{
+  grid-column: 1 / -1;
 }
 
 .m-12{
@@ -583,33 +620,37 @@ video {
   margin: 5rem;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
 }
 
 .mb-12{
   margin-bottom: 3rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-20{
   margin-top: 5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .inline{
@@ -640,12 +681,12 @@ video {
   width: 100%;
 }
 
-.max-w-\[700px\]{
-  max-width: 700px;
-}
-
 .max-w-\[1200px\]{
   max-width: 1200px;
+}
+
+.max-w-\[700px\]{
+  max-width: 700px;
 }
 
 .flex-1{
@@ -690,12 +731,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-12{
   gap: 3rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-8{
@@ -719,6 +760,10 @@ video {
   border-color: rgb(255 219 145 / var(--tw-border-opacity));
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .p-12{
   padding: 3rem;
 }
@@ -731,18 +776,14 @@ video {
   padding: 1rem;
 }
 
-.p-1{
-  padding: 0.25rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pt-12{
@@ -755,10 +796,6 @@ video {
 
 .text-right{
   text-align: right;
-}
-
-.text-\[clamp\(1rem\2c _10vw\2c _5rem\)\]{
-  font-size: clamp(1rem, 10vw, 5rem);
 }
 
 .text-2xl{
@@ -778,27 +815,31 @@ video {
   font-size: 2.75rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-\[4rem\]{
+  font-size: 4rem;
+}
+
+.text-\[clamp\(1rem\2c _10vw\2c _5rem\)\]{
+  font-size: clamp(1rem, 10vw, 5rem);
 }
 
 .text-\[clamp\(1rem\2c _5vw\2c _4rem\)\]{
   font-size: clamp(1rem, 5vw, 4rem);
 }
 
-.text-\[4rem\]{
-  font-size: 4rem;
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-\[\#ffdb91\]{
   --tw-text-opacity: 1;
   color: rgb(255 219 145 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -874,13 +915,13 @@ h5, h6, .font-dreamboat {
     padding: 3rem;
   }
 
-  .md\:text-\[1\.75rem\]{
-    font-size: 1.75rem;
-  }
-
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-\[1\.75rem\]{
+    font-size: 1.75rem;
   }
 }
 

@@ -3,13 +3,13 @@
 
 @font-face {
     font-family: Genesis;
-    src: url("/assets/fonts/genesis.otf") format("opentype");
+    src: url("/assets/fonts/genesis-font.otf") format("opentype");
     font-feature-settings: 'kern' 1, 'ss01';
 }
 
 @font-face {
   font-family: Dreamboat;
-  src: url("/assets/fonts/dreamboat.otf") format("opentype");
+  src: url("/assets/fonts/dreamboat-font.otf") format("opentype");
   font-feature-settings: 'kern' 1, 'ss01';
 }
 
