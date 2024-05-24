@@ -1,6 +1,6 @@
 {
  "name": "barcamp-omaha-2024",
- "version": 1,
+ "version": 2,
  "alias": ["omaha-2024.barcamp.events", "2024.barcampomaha.org"],
  "routes": [
   {
