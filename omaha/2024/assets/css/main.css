@@ -575,43 +575,12 @@ video {
   margin: auto;
 }
 
-.m-0{
-  margin: 0px;
-}
-
-.m-4{
-  margin: 1rem;
-}
-
 .m-12{
   margin: 3rem;
 }
 
-.m-8{
-  margin: 2rem;
-}
-
-.m-16{
-  margin: 4rem;
-}
-
 .m-20{
   margin: 5rem;
-}
-
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .mx-4{
@@ -623,48 +592,24 @@ video {
   margin-top: 1rem;
 }
 
-.mt-0{
-  margin-top: 0px;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
-}
-
 .mb-4{
   margin-bottom: 1rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .mt-8{
   margin-top: 2rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mb-12{
   margin-bottom: 3rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
-}
-
 .mt-20{
   margin-top: 5rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
 }
 
 .inline{
@@ -693,10 +638,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[700px\]{
-  width: 700px;
 }
 
 .max-w-\[700px\]{
@@ -778,12 +719,12 @@ video {
   border-color: rgb(255 219 145 / var(--tw-border-opacity));
 }
 
-.fill-white{
-  fill: #fff;
-}
-
 .p-12{
   padding: 3rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .p-4{
@@ -792,15 +733,6 @@ video {
 
 .p-1{
   padding: 0.25rem;
-}
-
-.p-2{
-  padding: 0.5rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .py-12{
@@ -825,8 +757,8 @@ video {
   text-align: right;
 }
 
-.text-\[4\.75rem\]{
-  font-size: 4.75rem;
+.text-\[clamp\(1rem\2c _10vw\2c _5rem\)\]{
+  font-size: clamp(1rem, 10vw, 5rem);
 }
 
 .text-2xl{
@@ -834,102 +766,29 @@ video {
   line-height: 2rem;
 }
 
-.text-\[4rem\]{
-  font-size: 4rem;
-}
-
-.text-\[2rem\]{
-  font-size: 2rem;
-}
-
-.text-\[1\.5rem\]{
-  font-size: 1.5rem;
-}
-
-.text-\[2\.5rem\]{
-  font-size: 2.5rem;
-}
-
-.text-\[2\.25rem\]{
-  font-size: 2.25rem;
-}
-
 .text-\[1\.25rem\]{
   font-size: 1.25rem;
-}
-
-.text-\[1\.75rem\]{
-  font-size: 1.75rem;
-}
-
-.text-\[2\.75rem\]{
-  font-size: 2.75rem;
-}
-
-.text-\[clamp\(1rem\2c _2\.5vw\2c _2rem\)\;\]{
-  font-size: clamp(1rem, 2.5vw, 2rem);;
-}
-
-.text-\[clamp\(1rem\2c _2\.5vw\2c _2rem\)\]{
-  font-size: clamp(1rem, 2.5vw, 2rem);
-}
-
-.text-\[clamp\(1rem\2c _5vw\2c _2rem\)\]{
-  font-size: clamp(1rem, 5vw, 2rem);
-}
-
-.text-\[clamp\(1rem\2c _5vw\2c _5rem\)\]{
-  font-size: clamp(1rem, 5vw, 5rem);
-}
-
-.text-\[clamp\(1rem\2c _5vw\2c _4rem\)\]{
-  font-size: clamp(1rem, 5vw, 4rem);
-}
-
-.text-\[clamp\(1rem\2c _10vw\2c _8rem\)\]{
-  font-size: clamp(1rem, 10vw, 8rem);
-}
-
-.text-\[clamp\(1rem\2c _10vw\2c _7rem\)\]{
-  font-size: clamp(1rem, 10vw, 7rem);
-}
-
-.text-\[clamp\(1rem\2c _10vw\2c _6rem\)\]{
-  font-size: clamp(1rem, 10vw, 6rem);
-}
-
-.text-\[clamp\(1rem\2c _10vw\2c _5rem\)\]{
-  font-size: clamp(1rem, 10vw, 5rem);
-}
-
-.text-\[clamp\(1rem\2c _9\.5vw\2c _5rem\)\]{
-  font-size: clamp(1rem, 9.5vw, 5rem);
-}
-
-.text-\[clamp\(1rem\2c _9\.25vw\2c _5rem\)\]{
-  font-size: clamp(1rem, 9.25vw, 5rem);
-}
-
-.text-\[clamp\(1rem\2c _9vw\2c _5rem\)\]{
-  font-size: clamp(1rem, 9vw, 5rem);
-}
-
-.text-\[clamp\(1rem\2c _9\.75vw\2c _5rem\)\]{
-  font-size: clamp(1rem, 9.75vw, 5rem);
 }
 
 .text-\[1rem\]{
   font-size: 1rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-\[2\.75rem\]{
+  font-size: 2.75rem;
 }
 
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-\[clamp\(1rem\2c _5vw\2c _4rem\)\]{
+  font-size: clamp(1rem, 5vw, 4rem);
+}
+
+.text-\[4rem\]{
+  font-size: 4rem;
 }
 
 .text-white{

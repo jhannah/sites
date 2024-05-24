@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all -p dev:*",
-    "build": "run-s build:*",
+    "build": "npm run build:css && npm run build:11ty",
     "dev:11ty": "npx @11ty/eleventy --serve",
     "dev:css": "tailwindcss -i assets/css/tailwind.css -o assets/css/main.css --watch --postcss",
     "build:css": "tailwindcss -i assets/css/tailwind.css -o assets/css/main.css --postcss",
@@ -22,19 +22,7 @@
     "url": "https://github.com/barcamp-events/sites/issues"
   },
   "homepage": "https://github.com/barcamp-events/sites#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "autoprefixer": "^10.4.7",
-    "css-loader": "^6.7.1",
-    "mini-css-extract-plugin": "^2.6.0",
-    "node-sass": "^7.0.1",
-    "normalize.css": "^8.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.14",
-    "postcss-loader": "^7.0.0",
-    "sass": "^1.52.1",
-    "sass-loader": "^13.0.0",
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
