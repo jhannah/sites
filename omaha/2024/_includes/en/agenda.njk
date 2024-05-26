@@ -1,7 +1,7 @@
-<section class="bg-dark-paper p-12">
+<section class="bg-dark-paper py-12 px-4">
   <div class="max-w-[700px] m-auto">
     <h2 class="text-[clamp(1rem,_10vw,_5rem)] text-white">{{ en.event.agenda.title }}</h2>
-    <p class="text-2xl mt-4 text-[#ffdb91]">{{ en.event.agenda.description }}</p>
+    <p class="text-base md:text-2xl mt-4 text-[#ffdb91]">{{ en.event.agenda.description }}</p>
 
     <div class="mt-4">
       {% for day in en.event.agenda.days %}
@@ -9,7 +9,7 @@
         {% for event in day.events %}
           <h4 class="text-[1rem] md:text-[1.75rem] text-white inline">{{ event.time }}</h4>
           <h5 class="text-[1rem] md:text-[1.75rem] font-dreamboat text-white inline">&nbsp;•&nbsp;{{ event.title }}</h5>
-          <p class="text-2xl mt-4 text-[#ffdb91]">{{ event.description }}</p>
+          <p class="text-base md:text-2xl mt-4 text-[#ffdb91]">{{ event.description }}</p>
           {% if not loop.last %}<hr class="m-12 border-[#ffdb91] border-dashed">{% endif %}
         {% endfor %}
         {% if not loop.last %}<hr class="m-20 mx-4 border-[#ffdb91]">{% endif %}
