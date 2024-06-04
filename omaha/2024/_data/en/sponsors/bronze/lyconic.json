@@ -1,5 +1,9 @@
 {
   "name": "Lyconic",
   "link": "https://lyconic.com",
-  "image": "lyconic.svg"
+  "image": "lyconic.svg",
+  "representative": {
+    "include": true,
+    "name": "Aron Filbert"
+  }
 }
