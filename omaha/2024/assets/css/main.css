@@ -673,6 +673,10 @@ video {
   max-height: 40rem;
 }
 
+.max-h-\[100px\]{
+  max-height: 100px;
+}
+
 .w-full{
   width: 100%;
 }
