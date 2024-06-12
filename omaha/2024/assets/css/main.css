@@ -669,16 +669,20 @@ video {
   height: 100%;
 }
 
-.max-h-\[40rem\]{
-  max-height: 40rem;
-}
-
 .max-h-\[100px\]{
   max-height: 100px;
 }
 
+.max-h-\[40rem\]{
+  max-height: 40rem;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .max-w-\[1200px\]{
@@ -842,6 +846,18 @@ video {
 
 .underline-offset-4{
   text-underline-offset: 4px;
+}
+
+.mix-blend-hard-light{
+  mix-blend-mode: hard-light;
+}
+
+.mix-blend-soft-light{
+  mix-blend-mode: soft-light;
+}
+
+.mix-blend-luminosity{
+  mix-blend-mode: luminosity;
 }
 
 .drop-shadow-\[0px_4px_6px_\#261B00\]{
