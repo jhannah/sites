@@ -45,21 +45,6 @@
     "description": "Here’s what to expect!",
     "days": [
       {
-        "date": "Friday, August&nbsp;9th",
-        "events": [
-          {
-            "time": "7:00PM",
-            "title": "Opening Party at TBD!",
-            "description": "Show up, relax, mingle with other BarCampers and have a drink on our opening party sponsor!"
-          },
-          {
-            "time": "12:00AM",
-            "title": "Go Home!",
-            "description": "Drive safely, take a cab or call in a Lyft. Just show up tomorrow in one piece. :)"
-          }
-        ]
-      },
-      {
         "date": "Saturday, August&nbsp;10th",
         "events": [
           {
